@@ -4,3 +4,13 @@ body {
     margin-left: 500px;
     margin-right: 500px;
 }
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0.5em 0;
+}
