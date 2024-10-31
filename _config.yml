@@ -1,5 +1,5 @@
 url: "https://open320neo.justsomeone.ch"
-baseurl: "https://open320neo.justsomeone.ch"
+baseurl: ""
 defaults:
   - scope:
       path: ""
