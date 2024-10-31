@@ -12,3 +12,8 @@ Falls du weiter Interessiert bist und mehr erfahren möchtest, schreibe gerne ei
 
 Hier haben wir die Neusten Posts:
 
+  {% for page in site.pages %}
+    {% if page.path contains 'post/' %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
