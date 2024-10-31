@@ -3,6 +3,7 @@ title: Dokumentation
 license: CC-BY-SA-4.0
 people: Elija
 filelink: https://github.com/open-320-neo/website
+layout: post
 ---
 
 # Die Dokumentation über die Dokumentation
