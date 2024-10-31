@@ -11,10 +11,9 @@ Wir probieren ein Flugsimulator selber zu bauen und sind zurzeit Aktiv daran. We
 Falls du weiter Interessiert bist und mehr erfahren möchtest, schreibe gerne eine E-Mail an diese Adresse: open320neo@justsomeone.ch
 
 Hier haben wir die Neusten Posts:
-<ul>
+
   {% for page in site.pages %}
     {% if page.path contains 'post/' %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
     {% endif %}
   {% endfor %}
-</ul>
