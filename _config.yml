@@ -6,6 +6,6 @@ defaults:
     values:
       layout: "main"
   - scope:
-      path: "posts"
+      path: "posts/"
     values:
       layout: "post"

@@ -18,6 +18,7 @@ Zuerst wird die Datei (oder Bild) erwähnt / angezeigt und danach wird davon ger
 Das Kann dann wiefolgt aussehen:
 
 "
+
 Bild1
 
 Erklärung zu Bild1
@@ -29,11 +30,13 @@ Erklärung zu Bild2
 Bild3
 
 Erklärung zu Bild3
+
 "
 
 oder
 
 "
+
 Pfad/im/Github1
 
 Erklärung zu Pfad/im/Github1
@@ -45,6 +48,7 @@ Erklärung zu Pfad/im/Github2
 Pfad/im/Github3
 
 Erklärung zu Pfad/im/Github3
+
 "
 
 Ich werde natürlich probieren das gut durchzusetzen und hoffe ihr habt Spass das durchzulesen.
