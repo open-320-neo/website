@@ -1,12 +1,14 @@
 body {
     text-align: center;
     background-color: #E2E2E2;
-    width: 500px;
-    min-width: 600px;  /* Füge eine Mindestbreite hinzu */
+    width: 90%;  /* Nutzt 90% der Bildschirmbreite, passt sich besser an */
+    max-width: 600px;  /* Setzt eine maximale Breite für große Bildschirme */
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem; /* Abstand zum Rand */
 }
 
+/* Navigation und Listenanpassung */
 ul {
     display: flex;
     flex-direction: column;
@@ -17,4 +19,16 @@ ul {
 
 li {
     margin: 0.5em 0;
+}
+
+/* Mobile Abfrage für Bildschirme unter 600px */
+@media (max-width: 600px) {
+    body {
+        width: 100%;  /* Nutzt die gesamte Breite auf kleineren Bildschirmen */
+        padding: 1rem;  /* Innenabstand, damit der Text nicht am Rand klebt */
+    }
+
+    ul {
+        text-align: center;  /* Zentriert den Text auf kleineren Bildschirmen */
+    }
 }
