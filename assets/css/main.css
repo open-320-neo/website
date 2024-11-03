@@ -26,6 +26,7 @@ li {
     body {
         width: 100%;  /* Nutzt die gesamte Breite auf kleineren Bildschirmen */
         padding: 1rem;  /* Innenabstand, damit der Text nicht am Rand klebt */
+        text-align: center;
     }
 
     ul {
