@@ -7,3 +7,9 @@ https://raw.githubusercontent.com/open-320-neo/korry-switches/refs/heads/main/re
 
 ## Bau
 https://raw.githubusercontent.com/open-320-neo/bau/refs/heads/main/readme.md
+
+## Panels
+https://raw.githubusercontent.com/open-320-neo/panels/refs/heads/main/readme.md
+
+## Elektronik
+https://raw.githubusercontent.com/open-320-neo/elektronik/refs/heads/main/readme.md
