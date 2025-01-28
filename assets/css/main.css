@@ -1,41 +1,69 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: #f0ffff;
     text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+
 #navbar {
     background: black;
     color: white;
     width: 100vw;
-    height: 50px;
+    /*height: 50px;*/
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #navbar a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
-    line-height: 45px;
+    font-size: 2.5vw;
+    line-height: 50px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
+
 #footer {
     background: black;
     color: white;
-    width: 100vw;
-    height: 50px;
-    position: fixed;
-    bottom: 0;
+    width: 100%;
+    /*height: 50px;*/
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #footer a {
     color: white;
     text-decoration: none;
-    font-size: 25px;
-    line-height: 45px;
-    margin: 10px;
+    font-size: 2.5vw;
+    line-height: 50px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
+
 p {
     font-size: 20px;
     margin: 10px;
 }
-.content  {
+
+.content {
     margin: 40px;
 }
+
 #twint {
     color: #ffffff;
     background-color: #020202;
@@ -45,10 +73,12 @@ p {
     padding: 10px 50px;
     cursor: pointer
 }
+
 #twint:hover {
     color: #ffffff;
     background-color: #1f1f1f;
 }
+
 .team-container {
     display: flex;
     justify-content: space-evenly;
@@ -81,7 +111,14 @@ p {
 #doku a, a:active {
     color: black;
 }
+
 #doku a:hover {
     color: #1f1f1f;
     background-color: #f0fff0;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
