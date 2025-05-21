@@ -1,0 +1,56 @@
+:root {
+  --bs-primary: #FFC62F;
+  --bs-secondary: #818181;
+}
+
+.btn-primary {
+  background-color: #FFC62F !important;
+  color: #000000 !important;
+}
+.btn-primary:hover {
+  background-color: #eeb51e !important;
+  color: #000000 !important;
+}
+.btn-secondary {
+  background-color: #818181 !important;
+  color: #ffffff !important;
+}
+.btn-secondary:hover {
+  background-color: #818181 !important;
+  color: #ffffff !important;
+}
+.bg-primary {
+  background-color: #FFC62F !important;
+}
+.bg-secondary {
+  background-color: #818181 !important;
+}
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/img/logo.png) no-repeat center center fixed !important;
+  background-color: #555555;
+  background-size: 50% !important;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-left: 30px;
+  color: #ffffff !important;
+}
+b {
+  color: #FFC62F;
+}
+a, a:visited {
+  color: #E4E4E4;
+}
+a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+.btna, .btna:hover, .btna:visited, .btna:active {
+  color: #000000 !important;
+  text-decoration: none;
+}
+.nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
+  color: #000000 !important;
+  text-decoration: none;
+}
