@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Extract the post-id from the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('post-id');
+document.addEventListener("DOMContentLoaded", () => {
+    // Extrahiere den Pfad aus der URL (z. B. "/bau")
+    const path = window.location.pathname;
+
+    // Entferne den führenden Slash und speichere den Rest als postId
+    const postId = path.startsWith("/") ? path.slice(1) : path;
 
     if (postId) {
-        // Construct the URL for the raw markdown file
+        // Konstruiere die URL für die PDF-Datei
         const pdfurl = `https://${postId}.open320neo.ch/README.pdf`;
-        document.getElementById("pdf-content").innerHTML = "<div id='pdf-content'><embed src='" + pdfurl + "'></div>"
+        document.getElementById("pdf").innerHTML = "<div id='pdf'><embed src='" + pdfurl + "' id='pdf-content'></div>";
     } else {
         console.error('post-id not found in URL');
     }

@@ -33,8 +33,13 @@ body {
   background-size: 50% !important;
   background-position: center center;
   background-attachment: fixed;
-  padding-left: 30px;
   color: #ffffff !important;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px
 }
 b {
   color: #FFC62F;
@@ -53,4 +58,31 @@ a:hover {
 .nav-link, .nav-link:hover, .nav-link:visited, .nav-link:active {
   color: #000000 !important;
   text-decoration: none;
+}
+#pdf {
+  width: 100%;
+  height: 100%;
+}
+#pdf-content{
+  width: 95%;
+  height: 90vh;
+  align-self: center;
+}
+b, .btn-primary, .btn-secondary, .bg-primary, .bg-secondary, .btna, #pdf, #pdf-content, h1, h2, h3, h4, h5, h6 {
+  padding-left: 30px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #FFC62F;
+  color: #000000;
+  text-align: center;
+  line-height: 60px;
+}
+.btn {
+  margin-left: 30px;
+  padding-left: 0px;
 }
