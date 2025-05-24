@@ -1,24 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Extract the post-id from the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('post-id');
+document.addEventListener("DOMContentLoaded", () => {
+    // Extrahiere den Pfad aus der URL (z. B. "/bau")
+    const path = window.location.pathname;
+
+    // Entferne den führenden Slash und speichere den Rest als postId
+    const postId = path.startsWith("/") ? path.slice(1) : path;
 
     if (postId) {
-        // Construct the URL for the raw markdown file
-        const markdownUrl = `https://raw.githubusercontent.com/open-320-neo/${postId}/refs/heads/main/README.md`;
-
-        // Fetch the markdown file
-        fetch(markdownUrl)
-            .then(response => response.text())
-            .then(markdown => {
-                // Convert markdown to HTML
-                const converter = new showdown.Converter();
-                const html = converter.makeHtml(markdown);
-
-                // Insert the HTML into the page
-                document.getElementById('content').innerHTML = html;
-            })
-            .catch(error => console.error('Error fetching markdown:', error));
+        // Konstruiere die URL für die PDF-Datei
+        const pdfurl = `https://${postId}.open320neo.ch/README.pdf`;
+        document.getElementById("pdf").innerHTML = "<div id='pdf'><embed src='" + pdfurl + "' id='pdf-content'></div>";
     } else {
         console.error('post-id not found in URL');
     }
